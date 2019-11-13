@@ -100,9 +100,9 @@ for key, value in vader.items():
 
 # BEGIN PROBLEM 3 SOLUTION
 # Assign the film "https://swapi.co/api/films/3/" to a variable named film.
-ENDPOINT = 'https://swapi.co/api/films/3/'
 
-film = requests.get(ENDPOINT).json()
+
+film = 'https://swapi.co/api/films/3/'
 
 print(film)
 
