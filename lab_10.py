@@ -133,7 +133,7 @@ filename = 'darth_vader.json'
 
 def write_json(filename, data):
     with open(filename, 'w', encoding= "utf8") as file_obj:
-        json_dump(data, file_obj, ensure_ascii = False, indent = 2)
+        json.dump(data, file_obj, ensure_ascii = False, indent = 2)
 
 
 
