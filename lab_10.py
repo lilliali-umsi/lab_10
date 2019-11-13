@@ -38,7 +38,7 @@ resource_uri = 'https://swapi.co/api/people/4/'
 # Hint: Use .json()
 params = {'search': 'darth vader'}
 vader = requests.get(resource_uri, params = params).json()
-print(vader)
+#print(vader)
 
 # The response variable should be assigned the following dictionary:
 """{
@@ -84,10 +84,12 @@ print(vader)
 
 # BEGIN PROBLEM 2 SOLUTION
 # Assign Vader's eye color to a variable named eye_color.
+for key, value in vader.items():
+    if key == 'eye_color':
+        eye_color = value
+ 
 
-eye_color = None
-
-# print(eye_color)
+print(eye_color)
 
 # END PROBLEM 2 SOLUTION
 
