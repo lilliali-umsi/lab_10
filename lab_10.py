@@ -89,7 +89,7 @@ for key, value in vader.items():
         eye_color = value
  
 
-print(eye_color)
+#print(eye_color)
 
 # END PROBLEM 2 SOLUTION
 
@@ -100,10 +100,11 @@ print(eye_color)
 
 # BEGIN PROBLEM 3 SOLUTION
 # Assign the film "https://swapi.co/api/films/3/" to a variable named film.
+ENDPOINT = 'https://swapi.co/api/films/3/'
 
-film = None
+film = requests.get(ENDPOINT).json()
 
-# print(film)
+print(film)
 
 # END PROBLEM 3 SOLUTION
 
